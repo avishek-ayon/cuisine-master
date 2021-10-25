@@ -7,4 +7,4 @@ Live link: https://jolly-nightingale-67f626.netlify.app/ Important features of t
 
 1. Display the educational courses offered.
 2. Display different components on routing.
-3. Using navbar to route to various pages along with error path.
+3. Using navbar to route to various pages along with error paths.
