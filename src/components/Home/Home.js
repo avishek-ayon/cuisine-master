@@ -9,10 +9,14 @@ import Cuisine from '../Cuisine/Cuisine';
 const Home = () => {
     const [foods, setFoods] = useState([]);
     useEffect(() => {
-        fetch("./food4.JSON")
+        const url = "./food.JSON";
+        fetch(url)
             .then(res => res.json())
             .then(data => setFoods(data))
     }, [])
+
+    // from json take 4 value using slice 
+    const course = foods.slice(0, 4);
     return (
         <div>
             <Carousel className=" my-5">
@@ -23,7 +27,7 @@ const Home = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
+                        <h3 className="text-danger fw-bold fs-2">Group Practical</h3>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -35,7 +39,7 @@ const Home = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
+                        <h3 className="text-danger fw-bold fs-2">Vegatable Tranning</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -47,24 +51,26 @@ const Home = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
+                        <h3 className="text-danger fw-bold fs-2">Indivual Exam</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
 
-            {/* service */}
+
             <div>
+                <h1 className="text-warning">Our Course</h1>
                 <Row xs={1} md={2} className="g-4 my-5 mx-5">
+                    {/* data send */}
                     {
-                        foods.map(food => <Cuisine
+                        course.map(food => <Cuisine
                             key={food.key}
-                            food={food}></Cuisine>)
+                            food={food} ></Cuisine>)
                     }
                 </Row>
             </div>
 
-        </div>
+        </div >
     );
 };
 
