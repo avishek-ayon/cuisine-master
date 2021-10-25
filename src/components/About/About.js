@@ -2,6 +2,7 @@ import React from 'react';
 import { Accordion, Card } from 'react-bootstrap';
 
 const About = () => {
+    // show the details of our training
     return (
         <div>
             <Card style={{ width: '18rem' }} className="mx-auto  w-50 mt-5 mb-5">

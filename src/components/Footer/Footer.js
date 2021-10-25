@@ -13,8 +13,11 @@ const Footer = () => {
             <Button variant="danger">Visit now</Button>
             <br />
 
-            <img src="https://raistheme.com/html/gostudy/img/raistheme.png" alt="" />
-            <footer>@2020 craft by Avishek Palit</footer>
+            <img src="https://i.pinimg.com/564x/57/5f/f7/575ff7fd547876bedeaf4e3d6cbfb342.jpg" alt="" />
+            <br />
+            <br />
+            <footer>@2020 craft by <small className="text-danger fs-3">Avishek Palit</small> </footer>
+            <br />
         </div>
     );
 };

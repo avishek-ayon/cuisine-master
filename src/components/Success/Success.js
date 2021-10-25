@@ -11,7 +11,7 @@ const Success = () => {
     }, [])
     return (
         <div>
-            <h1>Top 100 In World Ranked and Award Winner</h1>
+            <h1 className="my-5 rounded-3 border border-primary text-success fs-1 fw-bold">Top 100 In World Ranked and Award Winner</h1>
             <div>
                 <Row xs={1} md={2} className="g-4">
                     {

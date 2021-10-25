@@ -3,7 +3,7 @@ Live link: https://jolly-nightingale-67f626.netlify.app/ Important features of t
 
 * Use of basic concepts of react.
 * Use of routing.
-* Use of significant amount or react-bootstrap css framework. Main functionalities of this projuct are:
+* Use of significant amount or react-bootstrap css framework. Main functionalities of this project are:
 
 1. Display the educational courses offered.
 2. Display different components on routing.
